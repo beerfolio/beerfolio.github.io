@@ -1,1 +1,103 @@
-# beerfolio.github.io
+<!doctype html>
+<html>
+  <style>
+    html, body {
+  position: fixed;
+  font-family: roboto, sans-serif;
+  width: 100%;
+  height: 100%;
+  background: white;
+    counter-reset: section;
+  height: 100vh;
+  align-items: center;
+  color: black;
+}
+h1 {
+  width: 100%;
+  position: fixed;
+  margin: 1vh; 
+}
+h2::before {
+  counter-increment: section;
+  content: "image" counter(section, decimal-leading-zero) " ";
+}
+i {
+  transform: rotate(-45deg);
+  font-size: 20px;
+  padding-top: 5px;
+}
+.gallery-row {
+  display: flex;
+    overflow-x: auto;
+  padding-top: 10vh;
+}
+.gallery-row::-webkit-scrollbar {
+    display: none;
+}
+.item {
+  display: block;
+  margin: 5px;
+  transition: transform 200ms ease-out;
+  object-fit: cover;
+     align-items: center;
+}
+.item-image {
+  border-bottom: 1px solid black;
+  filter: grayscale(100%);
+}
+ .item:hover {
+  transform: scale(1.05);
+}
+@media only screen and (max-width: 800px) {
+  .gallery-row {
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+  }
+}
+  </style>
+	
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav>
+    <h1>beerfolio<i class="fas fa-wine-bottle"></i></h1>
+    </nav>
+    <section class="gallery-row">
+      
+      <div class="item">
+        <p class="item-image">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/410DiAdjm6L._SX385_.jpg"><h2></h2></p>
+      </div>
+      
+         <div class="item">
+        <p class="item-image">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/410DiAdjm6L._SX385_.jpg"><h2></h2></p>
+    
+      </div>
+           
+               <div class="item">
+        <p class="item-image">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/410DiAdjm6L._SX385_.jpg"><h2></h2></p>
+      </div>
+           
+               <div class="item">
+        <p class="item-image">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/410DiAdjm6L._SX385_.jpg"><h2></h2></p>
+      </div>
+      
+                     <div class="item">
+        <p class="item-image">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/410DiAdjm6L._SX385_.jpg"><h2></h2></p>
+      </div>
+
+<div class="item">
+        <p class="item-image">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/410DiAdjm6L._SX385_.jpg"><h2></h2></p>
+      </div>
+           
+      </section>
+</body>
+</html>
