@@ -73,20 +73,20 @@ img {
   
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  </head>
-  <body>
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-	  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){ {
-$('h1').first().delay(100).animate({'opacity':'1'},600);
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script type="text/javascript" src= "https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+  <script>
+    $(document).ready(function(){   $('h1').first().delay(100).animate({'opacity':'1'},600);
 $('i').last().delay(400).animate({'opacity':'1'},600);
 $('.gallery-row').delay(1000).animate({'opacity':'1'},1200);
 $(".item").lazyload({
     effect : "fadeIn"
 });
-});
+      });
   </script>
+  
+  </head>
+  <body>
     <nav>
     <h1>beerfolio<i class="fas fa-wine-bottle"></i></h1>
     </nav>
@@ -126,4 +126,3 @@ $(".item").lazyload({
       </section>
 </body>
 </html>
-
