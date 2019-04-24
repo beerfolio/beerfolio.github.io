@@ -76,13 +76,15 @@ img {
   </head>
   <body>
    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script type="text/javascript">  
+<script type="text/javascript">
+	window.onload = function() {
 $('h1').first().delay(100).animate({'opacity':'1'},600);
 $('i').last().delay(400).animate({'opacity':'1'},600);
 $('.gallery-row').delay(1000).animate({'opacity':'1'},1200);
 $(".item").lazyload({
     effect : "fadeIn"
 });
+	}
   </script>
     <nav>
     <h1>beerfolio<i class="fas fa-wine-bottle"></i></h1>
