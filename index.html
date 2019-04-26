@@ -16,6 +16,7 @@ h1 {
   width: 100%;
   position: fixed;
   margin: 1vh; 
+  opacity: 0;
 }
 h2::before {
   counter-increment: section;
@@ -25,11 +26,13 @@ i {
   transform: rotate(-45deg);
   font-size: 20px;
   padding-top: 5px;
+  opacity: 0;
 }
 .gallery-row {
   display: flex;
     overflow-x: auto;
   padding-top: 10vh;
+  opacity: 0;
 }
 .gallery-row::-webkit-scrollbar {
     display: none;
@@ -37,11 +40,9 @@ i {
 .item {
   display: block;
   margin: 5px;
-
   object-fit: cover;
-     align-items: center;
+  align-items: center;
 }
-
 img {
   height: 400px;
   width: auto;
@@ -50,7 +51,6 @@ img {
   border-bottom: 1px solid black;
   filter: grayscale(100%);
 }
-
 @media only screen and (max-width: 800px) {
   .gallery-row {
     align-content: center;
@@ -117,7 +117,7 @@ img {
   <script type="text/javascript">
     $(document).ready(function(){   
 $('h1').first().delay(100).animate({'opacity':'1'},600);
-$('i').last().delay(400).animate({'opacity':'1'},600);
+$('h1 > i').delay(400).animate({'opacity':'1'},600);
 $('.gallery-row').delay(1000).animate({'opacity':'1'},1200);
 $(".item").lazyload({
     effect : "fadeIn"
